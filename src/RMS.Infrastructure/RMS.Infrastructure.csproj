@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190124074226_Initial.cs" />
+    <Compile Remove="Migrations\20190124084635_Initial.cs" />
+    <Compile Remove="Migrations\20190124100922_Initialize.cs" />
+    <Compile Remove="Migrations\20190124101443_Initialize.cs" />
+    <Compile Remove="Migrations\20190125043512_ModelConfigSeedingData.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RMS.Core\RMS.Core.csproj" />
+  </ItemGroup>
+
+</Project>
